@@ -2,41 +2,50 @@
 
 
 # This project simulates and animates the three-body gravitational problem using Python and Matplotlib.
+Mathematical Background
+The Three-Body Problem simulates the motion of three masses influenced by each other’s gravity.
 
-F 
-ij
-​
- =G 
-∣r 
-j
-​
- −r 
-i
-​
- ∣ 
-3
- 
-m 
-i
-​
- m 
-j
-​
- 
-​
- (r 
-j
-​
- −r 
-i
-​
- )
+Newton’s Law of Gravitation
+The force exerted by body j on body i is:
 
-<img width="686" height="221" alt="image" src="https://github.com/user-attachments/assets/659cabcf-22a5-4dd5-868d-b715c6eb8f43" />
-<img width="708" height="376" alt="image" src="https://github.com/user-attachments/assets/be81a1dc-a454-4804-a478-424d05ea039b" />
-<img width="638" height="223" alt="image" src="https://github.com/user-attachments/assets/8cc95c73-e67c-46f1-9928-1240fd08e087" />
-<img width="613" height="338" alt="image" src="https://github.com/user-attachments/assets/ae228c24-ca52-4dbe-9ebe-42124b6f6bcf" />
-<img width="242" height="215" alt="image" src="https://github.com/user-attachments/assets/cb0e4d0e-06e8-492d-8a57-8d5bb03089ff" />
+F_ij = G * (m_i * m_j) / |r_j - r_i|^3 * (r_j - r_i)
+
+where:
+
+G is the gravitational constant
+
+m_i and m_j are the masses
+
+r_i and r_j are the position vectors of bodies i and j
+
+|r_j - r_i| is the distance between bodies i and j
+
+Equations of Motion
+The acceleration of body i is:
+
+d²r_i / dt² = (1 / m_i) * sum over j≠i of F_ij
+which simplifies to:
+d²r_i / dt² = G * sum over j≠i of m_j * (r_j - r_i) / |r_j - r_i|^3
+
+This forms a set of coupled differential equations for the positions.
+
+Numerical Integration
+We rewrite the system using velocity v_i = dr_i/dt:
+
+dr_i / dt = v_i
+
+dv_i / dt = acceleration from gravitational forces
+
+Using a time step Δt, update the velocities and positions as:
+
+v_i(t + Δt) = v_i(t) + Δt * a_i(t)
+
+r_i(t + Δt) = r_i(t) + Δt * v_i(t)
+
+where a_i(t) is acceleration at time t calculated from the forces.
+
+Initial Conditions
+The simulation starts with initial positions r_i(0), velocities v_i(0), and masses m_i for all three bodies.
 
 **SUMMARY**
 The code implements:
