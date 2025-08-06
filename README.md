@@ -5,6 +5,9 @@
 Mathematical Background
 The Three-Body Problem simulates the motion of three masses influenced by each other’s gravity.
 
+<img width="640" height="480" alt="Figure_1" src="https://github.com/user-attachments/assets/c705395e-6ffc-4c61-bcc5-9b605f56157a" />
+
+
 Newton’s Law of Gravitation
 The force exerted by body j on body i is:
 
@@ -47,7 +50,7 @@ where a_i(t) is acceleration at time t calculated from the forces.
 Initial Conditions
 The simulation starts with initial positions r_i(0), velocities v_i(0), and masses m_i for all three bodies.
 
-**SUMMARY**
+# **SUMMARY**
 The code implements:
 Calculation of pairwise gravitational accelerations for each body.
 
@@ -55,7 +58,7 @@ Integration of positions and velocities forward in time using a numerical method
 
 Repeated frame updates for animation.
 
-**UPCOMING**
+# **UPCOMING**
 # \- Includes animation saved as GIF.
 
 # \- Demonstrates physics and numerical integration.
