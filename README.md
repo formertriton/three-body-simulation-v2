@@ -6,46 +6,72 @@ A high-performance, interactive visualization of the famous three-body problem i
 Featuring advanced physics simulation, stunning visual effects, and real-time performance monitoring
 Real-time gravitational dynamics with particle effects, smooth trails, and interactive controls
 
+** Real-time gravitational dynamics with particle effects, smooth trails, and interactive controls **
 
 # ✨ Features
 🔬 Advanced Physics Engine
 
-4th-order Runge-Kutta integration for numerical accuracy and stability
-Adaptive timestep control automatically adjusts for optimal precision
-Multiple integration methods: RK4, Leapfrog, and Verlet integrators
-Energy conservation monitoring with real-time drift indicators
-Collision detection with visual feedback and event tracking
+- 4th-order Runge-Kutta integration for numerical accuracy and stability
+- Adaptive timestep control automatically adjusts for optimal precision
+- Multiple integration methods: RK4, Leapfrog, and Verlet integrators
+- Energy conservation monitoring with real-time drift indicators
+- Collision detection with visual feedback and event tracking
 
 🎨 Stunning Visual Effects
 
-Anti-aliased rendering with smooth curves and gradients
-Dynamic particle systems with realistic physics and fading
-Glow effects and body pulsation based on mass and velocity
-Smooth orbital trails with configurable length and opacity
-Interactive camera system with body following and smooth interpolation
+- Anti-aliased rendering with smooth curves and gradients
+- Dynamic particle systems with realistic physics and fading
+- Glow effects and body pulsation based on mass and velocity
+- Smooth orbital trails with configurable length and opacity
+- Interactive camera system with body following and smooth interpolation
 
 ⚡ High Performance
 
-60-120 FPS rendering with optimized algorithms
-GPU acceleration where available through Pygame
-Efficient memory management with automatic cleanup
-Real-time performance monitoring and frame time analysis
-Scalable particle systems that maintain smooth performance
+- 60-120 FPS rendering with optimized algorithms
+- GPU acceleration where available through Pygame
+- Efficient memory management with automatic cleanup
+- Real-time performance monitoring and frame time analysis
+- Scalable particle systems that maintain smooth performance
 
 🎮 Interactive Controls
 
-Real-time simulation control: pause, reset, speed adjustment
-Dynamic camera modes: free movement, body following, smooth zoom
-Visual debugging tools: force vectors, velocity vectors, physics data
-Scenario switching with multiple pre-configured systems
-Comprehensive keyboard shortcuts for all features
+- Real-time simulation control: pause, reset, speed adjustment
+- Dynamic camera modes: free movement, body following, smooth zoom
+- Visual debugging tools: force vectors, velocity vectors, physics data
+- Scenario switching with multiple pre-configured systems
+- Comprehensive keyboard shortcuts for all features
 
 🔧 Installation
-Prerequisites
 
+1. Clone this repository:
+````
+git clone https://github.com/yourusername/three-body-simulation.git
+cd three-body-simulation
+````
+2. Create and activate a virtual environment:
+````
+python -m venv venv
+# Windows
+venv\Scripts\activate
+# macOS/Linux
+source venv/bin/activate
+````
+3. Install dependencies:
+```
+pip install -r requirements.txt
+Usage
+Run the simulation:
+python main.py
+````
+4. Run the simulation:
+```
+python main.py
+```
+Prerequisites
+```
 Python 3.8+
 pip package manager
-
+```
 # Quick Start
 
 Clone the repository:
@@ -102,65 +128,59 @@ Arrow Keys           Pan camera
 Mouse Wheel          Zoom in/out
 Left Click + Drag    Pan camera
 ```
+
 # 📊 Simulation Scenarios
 1. 🎯 Enhanced Figure-8 Orbit
 The famous choreographic solution discovered by Chenciner and Montgomery. Three equal masses follow a stable figure-8 trajectory with perfect periodicity.
 
 Physics Highlights:
-
-Equal mass bodies (m = 1.0)
-Stable periodic solution
-Zero angular momentum configuration
-Perfect energy conservation demonstration
+- Equal mass bodies (m = 1.0)
+- Stable periodic solution
+- Zero angular momentum configuration
+- Perfect energy conservation demonstration
 
 2. 🌍 Solar System Dynamics
 Realistic representation of Sun-Earth-Moon gravitational interactions with proper mass ratios and orbital mechanics.
 Physics Highlights:
-
-Realistic mass ratios (Sun: 333,000, Earth: 1, Moon: 0.012)
-Hierarchical orbital structure
-Tidal effects demonstration
-Multiple timescale dynamics
+- Realistic mass ratios (Sun: 333,000, Earth: 1, Moon: 0.012)
+- Hierarchical orbital structure
+- Tidal effects demonstration
+- Multiple timescale dynamics
 
 3. ⭐ Binary Star Capture
 Complex three-body system featuring binary stars with a captured planet, demonstrating chaotic orbital mechanics.
 Physics Highlights:
-
-Binary star system with unequal masses
-Chaotic planetary capture dynamics
-Energy transfer mechanisms
-Lagrange point interactions
+- Binary star system with unequal masses
+- Chaotic planetary capture dynamics
+- Energy transfer mechanisms
+- Lagrange point interactions
 
 # 🔬 Technical Implementation
 Physics Engine (three_body_sim.py)
-
-Numerical Integration: 4th-order Runge-Kutta with adaptive timestep
-Force Calculation: N-body gravitational interactions with softening
-Energy Conservation: Hamiltonian mechanics with conservation tracking
-Collision Handling: Soft-sphere collision detection and response
+- Numerical Integration: 4th-order Runge-Kutta with adaptive timestep
+- Force Calculation: N-body gravitational interactions with softening
+- Energy Conservation: Hamiltonian mechanics with conservation tracking
+- Collision Handling: Soft-sphere collision detection and response
 
 Visualization Engine (main.py)
-
-Rendering Pipeline: Layered rendering with alpha blending
-Particle Systems: Physics-based trail particles with lifetime management
-Camera System: Smooth interpolation with multiple follow modes
-Performance Optimization: Frame rate limiting and selective rendering
+- Rendering Pipeline: Layered rendering with alpha blending
+- Particle Systems: Physics-based trail particles with lifetime management
+- Camera System: Smooth interpolation with multiple follow modes
+- Performance Optimization: Frame rate limiting and selective rendering
 
 Key Algorithms
-
-Runge-Kutta 4th Order: O(h^4) accuracy for position integration
-Leapfrog Integration: Symplectic integration for energy conservation
-Adaptive Timestep: Automatic step size based on system dynamics
-Spatial Optimization: Efficient distance calculations with softening
+- Runge-Kutta 4th Order: O(h^4) accuracy for position integration
+- Leapfrog Integration: Symplectic integration for energy conservation
+- Adaptive Timestep: Automatic step size based on system dynamics
+- Spatial Optimization: Efficient distance calculations with softening
 
 # 🎯 Educational Value
 This simulation demonstrates key concepts in:
-
-Classical Mechanics: Newton's laws, gravitational forces, conservation laws
-Numerical Analysis: Integration methods, stability, accuracy trade-offs
-Chaos Theory: Sensitivity to initial conditions, Poincaré sections
-Computational Physics: N-body simulations, performance optimization
-Computer Graphics: Real-time rendering, particle systems, visual effects
+- Classical Mechanics: Newton's laws, gravitational forces, conservation laws
+- Numerical Analysis: Integration methods, stability, accuracy trade-offs
+- Chaos Theory: Sensitivity to initial conditions, Poincaré sections
+- Computational Physics: N-body simulations, performance optimization
+- Computer Graphics: Real-time rendering, particle systems, visual effects
 
 # 🚀 Performance Metrics
 
@@ -218,37 +238,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 # Built with ❤️ by formertriton
 Exploring the beautiful chaos of celestial mechanics through interactive simulation
 
-Features
-
-Accurate Physics: 4th-order Runge-Kutta integration for precise orbital mechanics
-Multiple Scenarios: Figure-8 orbit, Sun-Earth-Moon system, and chaotic configurations
-Interactive Controls: Real-time pause, speed control, zoom, and camera panning
-Visual Effects: Orbital trails with fade effects and body glow rendering
-Energy Conservation Tracking: Monitor numerical accuracy with energy drift indicators
-
-Installation
-
-Clone this repository:
-````
-git clone https://github.com/yourusername/three-body-simulation.git
-cd three-body-simulation
-````
-Create and activate a virtual environment:
-````
-python -m venv venv
-# Windows
-venv\Scripts\activate
-# macOS/Linux
-source venv/bin/activate
-````
-Install dependencies:
-```
-pip install -r requirements.txt
-Usage
-Run the simulation:
-python main.py
-````
-
 Simulation Scenarios
 1. Figure-8 Orbit
 The famous stable periodic solution discovered by Chenciner and Montgomery (2000). Three equal masses chase each other along a figure-8 path.
@@ -258,17 +247,6 @@ A realistic representation of our solar system's dynamics with a massive central
 A demonstration of the chaotic nature of the three-body problem with three stars of different masses in unstable orbits.
 Technical Details
 Physics Engine
-
-Integration Method: 4th-order Runge-Kutta (RK4) for high accuracy
-Time Step: Adaptive stepping with collision detection
-Coordinate System: Cartesian coordinates with center-of-mass frame
-Energy Conservation: Monitored and displayed for numerical validation
-
-Performance
-
-Frame Rate: 60 FPS with real-time physics
-Optimization: Efficient NumPy operations and selective rendering
-Trail System: Configurable trail length with automatic cleanup
 
 Mathematical Background
 The three-body problem involves solving a system of differential equations:
@@ -284,11 +262,11 @@ mᵢ = mass of body i
 G = gravitational constant
 ```
 Dependencies
-
+```
 pygame: Real-time graphics and user interaction
 numpy: Efficient numerical computations
 matplotlib: Optional plotting utilities
-
+```
 Project Structure
 ```
 three-body-simulation/
@@ -299,32 +277,5 @@ three-body-simulation/
 ├── README.md           # This file
 └── .gitignore          # Git ignore rules
 ```
-Contributing
-
-Fork the repository
-Create your feature branch (git checkout -b feature/amazing-feature)
-Commit your changes (git commit -m 'Add amazing feature')
-Push to the branch (git push origin feature/amazing-feature)
-Open a Pull Request
-
-Future Enhancements
-
- Add more initial condition presets
- Implement Poincaré sections for chaos analysis
- Add gravitational wave visualization
- Export simulation data to CSV
- 3D visualization mode
- Multi-threaded physics computation
-
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
-References
-
-Chenciner, A. & Montgomery, R. (2000). A remarkable periodic solution of the three-body problem in the case of equal masses. Annals of Mathematics, 152(3), 881-901.
-Szebehely, V. (1967). Theory of Orbits: The Restricted Problem of Three Bodies. Academic Press.
-
-Acknowledgments
-
-NASA's Jet Propulsion Laboratory for orbital mechanics references
-The NumPy and Pygame communities for excellent documentation
-Historical contributions from Newton, Lagrange, and Poincaré to celestial mechanics
+<img width="1389" height="916" alt="Screenshot 2025-08-06 142354" src="https://github.com/user-attachments/assets/0669babb-f46f-454d-a49e-c1c7dbbe47da" />
+<img width="1388" height="918" alt="Screenshot 2025-08-06 142415" src="https://github.com/user-attachments/assets/45c2d86f-f07c-4c2b-8997-a8f77e59c22a" />
