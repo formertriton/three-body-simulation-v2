@@ -1,4 +1,4 @@
-🌌 Three-Body Problem Simulation
+# 🌌 Three-Body Problem Simulation
 
 <img width="1391" height="922" alt="Screenshot 2025-08-06 142327" src="https://github.com/user-attachments/assets/1cb32522-af1e-43c9-897b-70437d0d09dc" />
 
@@ -7,7 +7,7 @@ Featuring advanced physics simulation, stunning visual effects, and real-time pe
 Real-time gravitational dynamics with particle effects, smooth trails, and interactive controls
 
 
-✨ Features
+# ✨ Features
 🔬 Advanced Physics Engine
 
 4th-order Runge-Kutta integration for numerical accuracy and stability
@@ -46,7 +46,7 @@ Prerequisites
 Python 3.8+
 pip package manager
 
-Quick Start
+# Quick Start
 
 Clone the repository:
 ```
@@ -71,7 +71,7 @@ Run the simulation:
 ```
 python main.py
 ```
-🎮 Controls
+# 🎮 Controls
 ```
 Basic     Controls
 Key       Action
@@ -102,7 +102,7 @@ Arrow Keys           Pan camera
 Mouse Wheel          Zoom in/out
 Left Click + Drag    Pan camera
 ```
-📊 Simulation Scenarios
+# 📊 Simulation Scenarios
 1. 🎯 Enhanced Figure-8 Orbit
 The famous choreographic solution discovered by Chenciner and Montgomery. Three equal masses follow a stable figure-8 trajectory with perfect periodicity.
 
@@ -131,7 +131,7 @@ Chaotic planetary capture dynamics
 Energy transfer mechanisms
 Lagrange point interactions
 
-🔬 Technical Implementation
+# 🔬 Technical Implementation
 Physics Engine (three_body_sim.py)
 
 Numerical Integration: 4th-order Runge-Kutta with adaptive timestep
@@ -153,7 +153,7 @@ Leapfrog Integration: Symplectic integration for energy conservation
 Adaptive Timestep: Automatic step size based on system dynamics
 Spatial Optimization: Efficient distance calculations with softening
 
-🎯 Educational Value
+# 🎯 Educational Value
 This simulation demonstrates key concepts in:
 
 Classical Mechanics: Newton's laws, gravitational forces, conservation laws
@@ -162,7 +162,7 @@ Chaos Theory: Sensitivity to initial conditions, Poincaré sections
 Computational Physics: N-body simulations, performance optimization
 Computer Graphics: Real-time rendering, particle systems, visual effects
 
-🚀 Performance Metrics
+# 🚀 Performance Metrics
 
 Frame Rate: 60-120 FPS sustained performance
 Physics Rate: Up to 20x real-time simulation speed
@@ -170,7 +170,7 @@ Energy Drift: < 0.01% over 1000+ orbits
 Memory Usage: < 100MB for extended simulations
 Startup Time: < 2 seconds on modern hardware
 
-🔮 Future Enhancements
+# 🔮 Future Enhancements
 
  3D Visualization: Full three-dimensional orbital mechanics
  Relativistic Effects: General relativity corrections for extreme masses
@@ -181,7 +181,7 @@ Startup Time: < 2 seconds on modern hardware
  VR Support: Virtual reality immersive experience
  Machine Learning: AI-driven orbital prediction
 
-🤝 Contributing
+# 🤝 Contributing
 Contributions are welcome! Please feel free to submit issues, feature requests, or pull requests.
 Development Setup
 
@@ -199,7 +199,7 @@ Visual effects enhancements
 Educational documentation
 Cross-platform compatibility
 
-📚 References & Credits
+# 📚 References & Credits
 Scientific References
 
 Chenciner, A. & Montgomery, R. (2000). A remarkable periodic solution of the three-body problem. Annals of Mathematics.
@@ -212,10 +212,10 @@ NumPy Team for high-performance numerical computing
 Pygame Community for game development framework
 Python Software Foundation for the Python programming language
 
-📄 License
+# 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Built with ❤️ by formertriton
+# Built with ❤️ by formertriton
 Exploring the beautiful chaos of celestial mechanics through interactive simulation
 
 Features
