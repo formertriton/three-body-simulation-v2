@@ -6,7 +6,7 @@ A high-performance, interactive visualization of the famous three-body problem i
 Featuring advanced physics simulation, stunning visual effects, and real-time performance monitoring
 Real-time gravitational dynamics with particle effects, smooth trails, and interactive controls
 
-** Real-time gravitational dynamics with particle effects, smooth trails, and interactive controls **
+Real-time gravitational dynamics with particle effects, smooth trails, and interactive controls
 
 # ✨ Features
 🔬 Advanced Physics Engine
